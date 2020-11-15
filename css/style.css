@@ -1,0 +1,127 @@
+*{
+	font-family: 'Libre Franklin', sans-serif;
+}
+#backgroundShadow{
+	background-color: transparent;
+	padding: 100%;
+	opacity: 0.6;
+}
+.fstBlock{
+	background-color: #c9d4d6;
+}
+
+.scndBlock{
+	background-color: #e4eced;
+}
+
+.thrdBlock{
+	background-color: white;
+}
+
+.frthBlock{
+	background-color: #ffb87a;
+}
+
+.fifthBlock{
+	background-color: #d1cecb;
+}
+
+.typeText{
+	color: #003d9e;
+	font-weight: bolder;
+}
+
+.orngBtns{
+	border-radius: 100px;
+	background-color: #ffa200;
+	border:none;
+}
+
+.orangeTxt{
+	color: #ffa200;
+	font-size: 15px;
+	font-weight: bolder;
+
+}
+
+
+.whiteBtns{
+	border-radius: 100px;
+	background-color: transparent;
+	border: 0.50px solid #003d9e;
+}
+
+input {
+	outline: 0;
+	border-width: 0 0 2px;
+	border-color: #003d9e;
+	color: #003d9e;
+	background-color: #c9d4d6;
+}
+input:focus {
+	border-color: green
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	height: 100px;
+	width: 100px;
+	background-size: 100%, 100%;
+	background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+	content: '>';
+	font-size: 30px;
+	color: black;
+}
+
+.carousel-control-prev-icon:after {
+	content: '<';
+	font-size: 30px;
+	color: black;
+}
+
+ul > li {
+	color: #3a73cf;
+	font-weight: bolder;
+}
+
+
+#social li { 
+	display:inline;
+	padding: 10px; 
+	margin-right: 10px;
+	border: 2px solid; 
+	border-radius:50%;
+}
+
+.listHor li{
+	display:inline;
+}
+
+#downloadOption{
+	position: fixed;
+	right: 0;
+	top: 200px;
+	z-index: 1060;
+	background-color: #124aa3;
+}
+
+#contentDowloadOption{
+	position: fixed;
+	right: 0;
+	height: -webkit-fill-available;
+	top: 0px;
+	width: 25%;
+	z-index: 1080;
+	padding-bottom: 100%;
+	background-color: white;
+	border: 1px solid #003d9e;
+}
+
+#downloadOption a:hover{
+	color: #ffa200;
+}
+
