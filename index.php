@@ -115,10 +115,10 @@
 
 					<div class="col-xl-4 col-lg-4 col-md-11 col-sm-11 text-left">
 						<h6 class="typeText"><img src="img/images/superpacks.png"> Superpacks</h6>
-						<h1 class="typeText">Servicios y energía en una única cuota mensual</h1>
+						<h1 class="typeText" id="changeTxt">Servicios y energía en una única cuota mensual</h1>
 						<h6 class="typeText">Ahorra hasta <u>168€/año</u> en luz y gas.</h6>
 						<br>
-						<button class="button orngBtns"><span class="typeText text-white p-4">Descubrir</span></button>
+						<button class="button orngBtns p-2"><span class="typeText text-white p-4">Descubrir</span></button>
 					</div>
 
 					<div class="col-xl-3 col-lg-3 col-md-11 col-sm-11 text-center"><img class="mt-5" src="img/images/main-image-circle-old.png"></div>
@@ -134,8 +134,8 @@
 
 						<div class="text-center">
 							<br>
-							<button class="button orngBtns pl-4 pr-4"><span class="typeText text-white">Entra</span></button>
-							<button class="button whiteBtns pl-2 pr-2"><span class="typeText">Regístrate</span></button>
+							<button class="button orngBtns p-2"><span class="pl-2 pr-2 typeText text-white">Entra</span></button>
+							<button class="button whiteBtns p-2"><span class="typeText pl-2 pr-2">Regístrate</span></button>
 						</div>
 
 						<p class="mt-3"><a class="orangeTxt" href="#">Has olvidado tu contraseña? ></a></p>
@@ -180,8 +180,8 @@
 						<p><img height="140px" src="img/images/precio_mes_es.png"></p>
 
 						<br>
-						<button class="button orngBtns"><span class="typeText text-white p-4">Solicitar Online</span></button>
-						<button class="button whiteBtns"><span class="typeText pl-2 pr-2"><img class="mr-2" src="img/images/phone.png">900 83 43 26</span></button>
+						<button class="button orngBtns p-2"><span class="typeText text-white p-4">Solicitar Online</span></button>
+						<button class="button whiteBtns p-2"><span class="typeText pl-2 pr-2"><img class="mr-2" src="img/images/phone.png">900 83 43 26</span></button>
 					</div>
 					<div></div>
 					<div class="col-xl-6 col-lg-5 col-md-5 text-center"><img height="450" width="480" src="img/images/caldera-main.png"></div>
@@ -204,21 +204,21 @@
 									<h4 class="typeText">Tarjeta Naturgy</h4>
 									<img src="img/images/tarjeta.png">
 									<h6 class="typeText">Descubre la tarjeta gratuita de naturgy, acumula Euros Naturgy que puedes canjear en descuentos en factura, aplaza facturas, consigue bonificaciones, ¡y mucho más!</h6>
-									<button class="button orngBtns mt-4"><span class="typeText text-white p-4">Saber más</span></button>
+									<button class="button orngBtns p-2 mt-4"><span class="typeText text-white p-4">Saber más</span></button>
 								</div>
 								<div class="col-2"></div>
 								<div class="col-3 text-center">
 									<h4 class="typeText">Descuentos en factura</h4>
 									<img src="img/images/descuentos.png">
 									<h6 class="typeText">Consigue un reembolso de hasta un 10% del valord e tu reserva con Booking. Desde tu Área Clientes podrás acceder a "Mis Promociones" y entrar a Booking con tu usuario. Haz tu reserva y conseguiras un reembolso.</h6>
-									<button class="button orngBtns mt-3"><span class="typeText text-white p-4">Saber más</span></button>
+									<button class="button orngBtns p-2 mt-3"><span class="typeText text-white p-4">Saber más</span></button>
 								</div>
 							</div>
 						</div>
 
 						<div class="carousel-item">
 							<div class="section__content">
-								<h4 class="typeText">El tiempo en Barcelona</h2>
+								<h4 class="typeText">El tiempo en <span id="nameCity"></span></h4>
 								<div class="weather__block typeText" id="temperatura"></div>
 								<div class="weather__block typeText" id="iconoApi"></div>
 							</div>
@@ -226,64 +226,96 @@
 
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="carousel-control-prev-icon reloadCity" name="md" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
 					</a>
 					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="carousel-control-next-icon reloadCity" name="md" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
 				<!-- End Fourth Block Information-->
 
 				<!-- Start Fifth Block Information-->
-				<div class="row fifthBlock p-5">
-					<div class="col-2 offset-2">
-						<h6 class="typeText text-left">Productos destacados</h6>
-						<ul style="list-style-type:none; padding-left: 0px;">
-							<li>Superpacks</li>
-							<li>Tarifa EcoEasy</li>
-							<li>Tarifa Mes</li>
-							<li>Autoconsumo placas solares</li>
-							<li>Puntos de recarga inteligentes</li>
-							<li>Termostato inteligente</li>
-						</ul>
-					</div>
+				<div class="row fifthBlock p-5 hide hide-mobile">
 
-					<div class="col-2">
-						<h6 class="typeText text-left">Ventajas Naturgy</h6>
-						<ul style="list-style-type:none; padding-left: 0px;">
-							<li>Reserva en Booking.com</li>
-							<li>Servicio de vídeoasistencia médica</li>
-							<li>Tarjeta Naturgy</li>
-							<li>Facilidades de pago</li>
-							<li>Recomienda a un amigo</li>
-						</ul>
-					</div>
+					<div id="carouselFooter" class="carousel slide row frthBlock p-5 w-100 fifthBlock" data-ride="carousel">
 
-					<div class="col-2">
-						<h6 class="typeText text-left">Te ayudamos</h6>
-						<ul style="list-style-type:none; padding-left: 0px;">
-							<li>Conoce Área Clientes</li>
-							<li>Servicio Protección de Facturas</li>
-							<li>Más tarifas Naturgy</li>
-							<li>Política de reclamaciones</li>
-							<li>Consejos de ciberseguridad</li>
-							<li>App Servicios</li>
-							<li>App móvil Clientes</li>
-						</ul>
-						<img src="img/images/app-store.png">
-						<img src="img/images/google-play.png">
-					</div>
+						<ol class="carousel-indicators">
+							<li data-target="#carouselFooter" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselFooter" data-slide-to="1"></li>
+						</ol>
+						<div class="carousel-inner text-center">
+							<div class="carousel-item active text-center">
+								<div class="row">
+									<div class="col-6 text-center">
+										<h6 class="typeText text-center">Productos destacados</h6>
+										<ul style="list-style-type:none; padding-left: 0px;">
+											<li>Superpacks</li>
+											<li>Tarifa EcoEasy</li>
+											<li>Tarifa Mes</li>
+											<li>Autoconsumo placas solares</li>
+											<li>Puntos de recarga inteligentes</li>
+											<li>Termostato inteligente</li>
+										</ul>
 
-					<div class="col-2">
-						<h6 class="typeText text-left">Ahorro y eficiencia</h6>
-						<ul style="list-style-type:none; padding-left: 0px;">
-							<li>Climatización eficiente</li>
-							<li>Iluminación eficiente</li>
-							<li>Seguridad en tus instalaciones</li>
-							<li>Consejos de ahorro energético</li>
-						</ul>
+									</div>
+
+
+									<div class="col-6 text-center">
+										<h6 class="typeText text-center">Ventajas Naturgy</h6>
+										<ul style="list-style-type:none; padding-left: 0px;">
+											<li>Reserva en Booking.com</li>
+											<li>Servicio de vídeoasistencia médica</li>
+											<li>Tarjeta Naturgy</li>
+											<li>Facilidades de pago</li>
+											<li>Recomienda a un amigo</li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-6 text-center">
+										<h6 class="typeText text-center">Te ayudamos</h6>
+										<ul style="list-style-type:none; padding-left: 0px;">
+											<li>Conoce Área Clientes</li>
+											<li>Servicio Protección de Facturas</li>
+											<li>Más tarifas Naturgy</li>
+											<li>Política de reclamaciones</li>
+											<li>Consejos de ciberseguridad</li>
+											<li>App Servicios</li>
+											<li>App móvil Clientes</li>
+										</ul>
+										<img src="img/images/app-store.png">
+										<img src="img/images/google-play.png">
+
+									</div>
+
+
+									<div class="col-6 text-center">
+										<h6 class="typeText text-center">Ahorro y eficiencia</h6>
+										<ul style="list-style-type:none; padding-left: 0px;">
+											<li>Climatización eficiente</li>
+											<li>Iluminación eficiente</li>
+											<li>Seguridad en tus instalaciones</li>
+											<li>Consejos de ahorro energético</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<a class="carousel-control-prev" href="#carouselFooter" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon reloadCity" name="md" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselFooter" role="button" data-slide="next">
+							<span class="carousel-control-next-icon reloadCity" name="md" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
 
 					<div class="col-12 text-center mt-5">
@@ -317,8 +349,128 @@
 
 				<!-- End Fifth Block Informatino-->
 
+				<div class="row fifthBlock p-5 hide show-mobile">
+
+					<div id="carouselFooterMobile" class="carousel slide row frthBlock p-5 w-100 fifthBlock" data-ride="carousel">
+
+						<ol class="carousel-indicators">
+							<li data-target="#carouselFooterMobile" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselFooterMobile" data-slide-to="1"></li>
+							<li data-target="#carouselFooterMobile" data-slide-to="2"></li>
+							<li data-target="#carouselFooterMobile" data-slide-to="3"></li>
+						</ol>
+						<div class="carousel-inner text-center">
+							<div class="carousel-item active text-center">
+								<div class="row">
+									<div class="col-12 text-center">
+										<h6 class="typeText text-center">Productos destacados</h6>
+										<ul style="list-style-type:none; padding-left: 0px;">
+											<li>Superpacks</li>
+											<li>Tarifa EcoEasy</li>
+											<li>Tarifa Mes</li>
+											<li>Autoconsumo placas solares</li>
+											<li>Puntos de recarga inteligentes</li>
+											<li>Termostato inteligente</li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item  text-center">
+								<div class="row">
+									<div class="col-12 text-center">
+										<h6 class="typeText text-center">Ventajas Naturgy</h6>
+										<ul style="list-style-type:none; padding-left: 0px;">
+											<li>Reserva en Booking.com</li>
+											<li>Servicio de vídeoasistencia médica</li>
+											<li>Tarjeta Naturgy</li>
+											<li>Facilidades de pago</li>
+											<li>Recomienda a un amigo</li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item  text-center">
+								<div class="row">
+									<div class="col-12 text-center">
+										<h6 class="typeText text-center">Te ayudamos</h6>
+										<ul style="list-style-type:none; padding-left: 0px;">
+											<li>Conoce Área Clientes</li>
+											<li>Servicio Protección de Facturas</li>
+											<li>Más tarifas Naturgy</li>
+											<li>Política de reclamaciones</li>
+											<li>Consejos de ciberseguridad</li>
+											<li>App Servicios</li>
+											<li>App móvil Clientes</li>
+										</ul>
+										<img src="img/images/app-store.png">
+										<img src="img/images/google-play.png">
 
 
+									</div>
+								</div>
+							</div>
+
+
+							<div class="carousel-item  text-center">
+								<div class="row">
+									<div class="col-12 text-center">
+										<h6 class="typeText text-center">Ahorro y eficiencia</h6>
+										<ul style="list-style-type:none; padding-left: 0px;">
+											<li>Climatización eficiente</li>
+											<li>Iluminación eficiente</li>
+											<li>Seguridad en tus instalaciones</li>
+											<li>Consejos de ahorro energético</li>
+										</ul>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+
+
+						<a class="carousel-control-prev" href="#carouselFooterMobile" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselFooterMobile" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" name="md" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+
+
+				</div>
+
+					<div class="col-12 text-center mt-5">
+						<ul id="social">
+							<li><img height="20px" width="20px" src="img/images/rrss-instagram.svg"></li>
+							<li><img height="20px" width="20px" src="img/images/rrss-facebook.svg"></li>
+							<li><img height="20px" width="20px" src="img/images/rrss-twitter.svg"></li>
+						</ul>
+					</div>
+
+					<div class="col-12 text-center mt-2">
+						<ul class="listHor">
+							<li>Conócenos | </li>
+							<li>Accesibilidad | </li>
+							<li>Nota Legal | </li>
+							<li>Política de Cookies | </li>
+							<li>Contacto | </li>
+							<li><u>Atención al cliente: 900 100 251</u></li>
+						</ul>
+					</div>
+
+					<div class="col-12 text-center mt-2">
+						<ul class="listHor">
+							<li>© Naturgy | </li>
+							<li>Avenida San Luis, 77 28033 Madrid </li>
+
+						</ul>
+					</div>
 
 
 

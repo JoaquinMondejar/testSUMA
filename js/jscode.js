@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+	
 	let elementClicked;
 	$('#contentDowloadOption').hide();
 	$('#backgroundShadow').hide();
@@ -37,3 +39,4 @@ $(document).ready(function () {
 
 
 });
+
